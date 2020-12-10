@@ -275,10 +275,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3700086958872798211, guid: 50695f315464fa94db0286ed1ece6eea,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b2a22c1095f9eb246a5bc501ba79dd75, type: 2}
     - target: {fileID: 3700086958872798461, guid: 50695f315464fa94db0286ed1ece6eea,
         type: 3}
       propertyPath: m_Name
-      value: Ball (2)
+      value: Red Ball
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50695f315464fa94db0286ed1ece6eea, type: 3}
@@ -437,10 +442,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3700086958872798211, guid: 50695f315464fa94db0286ed1ece6eea,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 875c1bb6ec5ccad4ea899955ccb669bb, type: 2}
     - target: {fileID: 3700086958872798461, guid: 50695f315464fa94db0286ed1ece6eea,
         type: 3}
       propertyPath: m_Name
-      value: Ball (3)
+      value: White Ball
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50695f315464fa94db0286ed1ece6eea, type: 3}
@@ -506,10 +516,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3700086958872798211, guid: 50695f315464fa94db0286ed1ece6eea,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 33f7c41ba9016334d8d8b895f8f19b7c, type: 2}
     - target: {fileID: 3700086958872798461, guid: 50695f315464fa94db0286ed1ece6eea,
         type: 3}
       propertyPath: m_Name
-      value: Ball (4)
+      value: Black Ball
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50695f315464fa94db0286ed1ece6eea, type: 3}
@@ -575,10 +590,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3700086958872798211, guid: 50695f315464fa94db0286ed1ece6eea,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e6bf62496f72c8248ba425c25ab06a0a, type: 2}
     - target: {fileID: 3700086958872798461, guid: 50695f315464fa94db0286ed1ece6eea,
         type: 3}
       propertyPath: m_Name
-      value: Ball (1)
+      value: Blue Ball
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50695f315464fa94db0286ed1ece6eea, type: 3}
@@ -727,10 +747,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3700086958872798211, guid: 50695f315464fa94db0286ed1ece6eea,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1487442fbbb018b4fa538243971ff8b0, type: 2}
     - target: {fileID: 3700086958872798461, guid: 50695f315464fa94db0286ed1ece6eea,
         type: 3}
       propertyPath: m_Name
-      value: Ball
+      value: Green Ball
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50695f315464fa94db0286ed1ece6eea, type: 3}
