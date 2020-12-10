@@ -285,6 +285,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red Ball
       objectReference: {fileID: 0}
+    - target: {fileID: 3700086958872798461, guid: 50695f315464fa94db0286ed1ece6eea,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacles
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50695f315464fa94db0286ed1ece6eea, type: 3}
 --- !u!1 &377821894
@@ -452,6 +457,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: White Ball
       objectReference: {fileID: 0}
+    - target: {fileID: 3700086958872798461, guid: 50695f315464fa94db0286ed1ece6eea,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacles
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50695f315464fa94db0286ed1ece6eea, type: 3}
 --- !u!1001 &494965975
@@ -526,6 +536,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Black Ball
       objectReference: {fileID: 0}
+    - target: {fileID: 3700086958872798461, guid: 50695f315464fa94db0286ed1ece6eea,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacles
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50695f315464fa94db0286ed1ece6eea, type: 3}
 --- !u!1001 &962145040
@@ -599,6 +614,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Blue Ball
+      objectReference: {fileID: 0}
+    - target: {fileID: 3700086958872798461, guid: 50695f315464fa94db0286ed1ece6eea,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacles
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50695f315464fa94db0286ed1ece6eea, type: 3}
@@ -756,6 +776,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Green Ball
+      objectReference: {fileID: 0}
+    - target: {fileID: 3700086958872798461, guid: 50695f315464fa94db0286ed1ece6eea,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacles
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50695f315464fa94db0286ed1ece6eea, type: 3}
