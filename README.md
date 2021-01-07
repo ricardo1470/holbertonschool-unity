@@ -5,6 +5,7 @@
 |---|---|
 | [0x00-unity-user_interface](./https://github.com/ricardo1470/holbertonschool-unity/tree/main/0x00-unity-user_interface)  | The Augmented Reality / Virtual Reality (AR/VR)  |
 | [0x01-unity_concepts](./https://github.com/ricardo1470/holbertonschool-unity/tree/main/0x01-unity_concepts) | add desc  |
+| [0x04-unity_publishing]() | add desc |
 |  |   |
 
 ---
