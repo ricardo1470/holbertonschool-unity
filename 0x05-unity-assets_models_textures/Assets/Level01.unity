@@ -1237,6 +1237,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 594236174}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &606737543 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4848505392935385760, guid: c74b5b30c3645984abd5867f5b2e9fd0,
+    type: 3}
+  m_PrefabInstance: {fileID: 4848505392328650279}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &606737548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606737543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a438b10b276958948b5eacf7d09c3cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  jump: -2
+--- !u!143 &606737550
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606737543}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &645142302
 GameObject:
   m_ObjectHideFlags: 0
@@ -3399,6 +3437,11 @@ PrefabInstance:
     - target: {fileID: 4848505392935385772, guid: c74b5b30c3645984abd5867f5b2e9fd0,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4848505392935385774, guid: c74b5b30c3645984abd5867f5b2e9fd0,
+        type: 3}
+      propertyPath: m_ReceiveShadows
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
