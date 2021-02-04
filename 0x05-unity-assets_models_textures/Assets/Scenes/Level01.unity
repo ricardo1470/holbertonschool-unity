@@ -795,6 +795,7 @@ GameObject:
   - component: {fileID: 386678409}
   - component: {fileID: 386678408}
   - component: {fileID: 386678407}
+  - component: {fileID: 386678411}
   m_Layer: 0
   m_Name: WinFlag
   m_TagString: Untagged
@@ -871,12 +872,25 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 386678406}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 115, y: 3.8, z: 0}
+  m_LocalPosition: {x: 115, y: 3.76, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &386678411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386678406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 569bcb73cddc7244599c9fc429cde9c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: {fileID: 606737544}
 --- !u!1 &399507439
 GameObject:
   m_ObjectHideFlags: 0
@@ -3488,7 +3502,7 @@ PrefabInstance:
     - target: {fileID: 1742533235446269354, guid: c74b5b30c3645984abd5867f5b2e9fd0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.24
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 1742533235446269354, guid: c74b5b30c3645984abd5867f5b2e9fd0,
         type: 3}

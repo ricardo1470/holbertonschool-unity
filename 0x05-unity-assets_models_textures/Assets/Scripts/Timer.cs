@@ -16,9 +16,16 @@ public class Timer : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         time += Time.deltaTime;
 		TimerText.text = string.Format("{1:0}:{0:00.00}", time % 60, time / 60);
+    }
+
+    public void TextWinColor()
+    {
+        enabled = false;
+        TimerText.color = Color.green;
+        TimerText.fontSize = 60;
     }
 }
