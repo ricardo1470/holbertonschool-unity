@@ -400,6 +400,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 214545369}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &257558800 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5087822096036796184, guid: b4645b0ff8a5dc047840b684edaa9d20,
+    type: 3}
+  m_PrefabInstance: {fileID: 5087822095957761544}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &312646692
 GameObject:
   m_ObjectHideFlags: 0
@@ -1259,6 +1271,19 @@ MonoBehaviour:
   mainCamera: {fileID: 974355194}
   fallVelocity: 0
   jumpForce: 8
+--- !u!114 &606737549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606737543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b00bd147512406f4682b8bbd4e8c1c26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TimerText: {fileID: 257558800}
 --- !u!143 &606737550
 CharacterController:
   m_ObjectHideFlags: 0
