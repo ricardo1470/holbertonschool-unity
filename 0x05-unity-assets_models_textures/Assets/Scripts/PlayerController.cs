@@ -63,15 +63,21 @@ public class PlayerController : MonoBehaviour
 
         player.transform.LookAt(player.transform.position + movePlayer);
 
-        Vector3 move = new Vector3(Horizontal, 0.0f, Vertical);
-
         // function for gravity
         SetGravity();
 
         // functions
         playerSkills();
 
-        player.Move(movePlayer * Time.deltaTime);
+        if (transform.position.y > -20)
+        {
+            player.Move(movePlayer * Time.deltaTime);
+        }
+        else
+        {
+            //gravity = 9.8f;
+            transform.position = new Vector3(0, 10, 0);
+        }
     }
 
     // function for the camera
@@ -95,11 +101,12 @@ public class PlayerController : MonoBehaviour
     // function Skills
     public void playerSkills()
     {
-        if (player.isGrounded && Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && player.isGrounded)
         {
             fallVelocity = jumpForce;
             movePlayer.y = fallVelocity;
         }
+
     }
 
     // function for gravity
