@@ -10,7 +10,7 @@
 | [4. Wait, hold on, time out](./Assets/) | the `Level01` Scene, create a new Canvas and using the image as a guide, create a pause screen with the following objects:  |
 | [5. Es-ca-pé](./Assets/) | new `C# script` called `PauseMenu.cs`. Add a method to this script so that when the player presses Esc while playing the game, the game should pause and the `PauseCanvas` should become active. The timer should also pause.  |
 | [6. Even more button pushing](./Assets/) | the `PauseMenu` and `PauseMenu.cs`, script the `RestartButton` so that it reloads the level scene that the player is currently on.  |
-| [7. Up is down, down is up](./Assets/) | the `CameraController.cs` script, add the ability to [invert the Y axis](https://www.giantbomb.com/inverted-controls/3015-5663/).  |
+| [7. Up is down, down is up](./Assets/) | the `CameraController.cs` script, add the ability to **[invert the Y axis](https://www.giantbomb.com/inverted-controls/3015-5663/)**.  |
 | [8. But Y?](./Assets/) | In `Options` and `OptionsMenu.cs`, script it so that checking the `InvertYToggle` in the menu and applying the changes reverses the camera/mouse movements in the level scene.  |
 | [9. A winner is you](./Assets/) | the `Level01` Scene, create a new Canvas and using the image as a guide, create a win screen with the following objects  |
 | [10. Winning isn't everything](./Assets/) | `WinTrigger.cs` so that when the player touches the flag, `WinCanvas` becomes active.  |
