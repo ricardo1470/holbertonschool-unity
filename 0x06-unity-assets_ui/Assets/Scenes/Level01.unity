@@ -23069,7 +23069,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1359002256}
   m_Layer: 0
-  m_Name: outdoors
+  m_Name: outDoors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
