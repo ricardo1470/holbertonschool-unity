@@ -1487,6 +1487,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1261181372}
   m_CullTransparentMesh: 0
+--- !u!114 &1370079387 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1358963858734750072, guid: 222fa5484461fbb4288e91e4dbe6bc91,
+    type: 3}
+  m_PrefabInstance: {fileID: 1358963858057930736}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1399980076
 GameObject:
   m_ObjectHideFlags: 0
@@ -1535,6 +1547,7 @@ GameObject:
   - component: {fileID: 1623065843}
   - component: {fileID: 1623065842}
   - component: {fileID: 1623065841}
+  - component: {fileID: 1623065845}
   m_Layer: 5
   m_Name: OptionsCanvas
   m_TagString: Untagged
@@ -1628,6 +1641,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1623065845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623065840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77cf6a9df46a2e246b6e2753084c77c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BackButton: {fileID: 1370079387}
 --- !u!1 &1707575736
 GameObject:
   m_ObjectHideFlags: 0
