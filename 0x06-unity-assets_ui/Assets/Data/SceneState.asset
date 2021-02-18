@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bbdf9f1c6c7f645a1ba061950e573f, type: 3}
   m_Name: SceneState
   m_EditorClassIdentifier: 
-  previousScene: MainMenu
+  previousScene: 

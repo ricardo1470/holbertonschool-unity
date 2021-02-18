@@ -1,7 +1,8 @@
 ﻿using System;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 
 public class PauseMenu : MonoBehaviour
@@ -11,6 +12,9 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseCanvas;
     bool paused = false;
     public Button ResumeButton;
+    public Button RestartButton;
+    public Button MenuButton;
+    public Button OptionsButton;
 
     public void Start()
     {
@@ -19,6 +23,12 @@ public class PauseMenu : MonoBehaviour
             pauseCanvas.SetActive(false);
             Resume();
         });
+        
+        RestartButton.onClick.AddListener((Restart));
+        
+        MenuButton.onClick.AddListener((MainMenu));
+        
+        OptionsButton.onClick.AddListener((Options));
     }
 
     private void Update()
@@ -51,5 +61,21 @@ public class PauseMenu : MonoBehaviour
     }
 
     public void Restart()
-    {}
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void MainMenu()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void Options()
+    {
+        Time.timeScale = 1;
+        PlayerPrefs.SetString("PreviousScene", SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("Options");
+    }
 }
