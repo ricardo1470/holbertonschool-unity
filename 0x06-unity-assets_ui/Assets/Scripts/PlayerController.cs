@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using System;
-using System.Xml.Serialization;
+﻿using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
@@ -44,22 +40,18 @@ public class PlayerController : MonoBehaviour
     {
         player = GetComponent<CharacterController> ();
     }
-
-    public void update ()
-    {
-    }
-
+    
     public void FixedUpdate()
     {
         Horizontal = Input.GetAxis("Horizontal");
         Vertical = Input.GetAxis("Vertical");
 
-        //camera directtion
+        //camera direction
         camDirection();
 
         movePlayer = ((Horizontal * camRight) + (Vertical * camForward));
 
-        movePlayer = movePlayer * speed;
+        movePlayer *= speed;
 
         player.transform.LookAt(player.transform.position + movePlayer);
 
@@ -67,7 +59,7 @@ public class PlayerController : MonoBehaviour
         SetGravity();
 
         // functions
-        playerSkills();
+        PlayerSkills();
 
         if (transform.position.y > -20)
         {
@@ -81,12 +73,13 @@ public class PlayerController : MonoBehaviour
     }
 
     // function for the camera
-    public void camDirection()
+    private void camDirection()
     {
         // forward direction of main camera
-        camForward = mainCamera.transform.forward;
+        var transform1 = mainCamera.transform;
+        camForward = transform1.forward;
         //direction to the right of the main camera
-        camRight = mainCamera.transform.right;
+        camRight = transform1.right;
 
         // y axis set to 0
         camForward.y = 0;
@@ -99,18 +92,16 @@ public class PlayerController : MonoBehaviour
     }
 
     // function Skills
-    public void playerSkills()
+    private void PlayerSkills()
     {
-        if (Input.GetButtonDown("Jump") && player.isGrounded)
-        {
-            fallVelocity = jumpForce;
-            movePlayer.y = fallVelocity;
-        }
+        if (!Input.GetButtonDown("Jump") || !player.isGrounded) return;
+        fallVelocity = jumpForce;
+        movePlayer.y = fallVelocity;
 
     }
 
     // function for gravity
-    public void SetGravity()
+    private void SetGravity()
     {
         if (player.isGrounded)
         {
