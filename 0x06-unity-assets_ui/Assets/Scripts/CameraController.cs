@@ -10,21 +10,43 @@ public class CameraController : MonoBehaviour
     private Vector3 offset;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         offset = transform.position - player.transform.position;
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        if(Input.GetMouseButton(1))
+        if (PlayerPrefs.GetInt("isInverted") == 1)
         {
-            offset = Quaternion.AngleAxis(Input.GetAxis("Mouse X") * mouseMove, Vector3.up) * Quaternion.AngleAxis(Input.GetAxis("Mouse Y") * mouseMove, Vector3.left) * offset;
-            transform.position = player.transform.position + offset;
-            transform.LookAt(player.transform.position);
+            if (Input.GetMouseButton(1))
+            {
+                offset = Quaternion.AngleAxis(Input.GetAxis("Mouse X") * mouseMove, Vector3.up) *
+                         Quaternion.AngleAxis(Input.GetAxis("Mouse Y") * mouseMove, Vector3.left) * offset;
+                var position = player.transform.position;
+                transform.position = position + offset;
+                transform.LookAt(position);
+            }
+            else
+            {
+                transform.position = player.transform.position + offset;
+            }
         }
         else
-            transform.position = player.transform.position + offset;
+        {
+            if (Input.GetMouseButton(1))
+            {
+                offset = Quaternion.AngleAxis(Input.GetAxis("Mouse X") * mouseMove, Vector3.up) *
+                         Quaternion.AngleAxis((Input.GetAxis("Mouse Y") * -1) * mouseMove, Vector3.left) * offset;
+                var position = player.transform.position;
+                transform.position = position + offset;
+                transform.LookAt(position);
+            }
+            else
+            {
+                transform.position = player.transform.position + offset;
+            }
+        }
     }
 }

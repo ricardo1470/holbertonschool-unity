@@ -1,23 +1,19 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 
 public class PauseMenu : MonoBehaviour
 {
-    public Button RestartButton;
+    //public Button RestartButton;
 
-    public GameObject PauseCanvas;
+    [FormerlySerializedAs("PauseCanvas")] public GameObject pauseCanvas;
     
     public void Pause()
-    {
-        // value keyboard Esc
-        if (Input.GetKey(KeyCode.Escape))
-        {
-            PauseCanvas.SetActive(true);
-        }
-    }
+    {}
 
-    public void Resume()
+    private void Resume()
     {}
 
     public void Restart()
