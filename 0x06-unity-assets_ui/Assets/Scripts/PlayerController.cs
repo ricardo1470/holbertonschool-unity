@@ -114,4 +114,13 @@ public class PlayerController : MonoBehaviour
             movePlayer.y = fallVelocity;
         }
     }
+    
+    void OnTriggerEnter (Collider other)
+    {
+        if (other.tag == "DropTrigger")
+        {
+            Debug.Log(string.Format("esta en la plataforma"));
+        }
+        
+    }
 }
