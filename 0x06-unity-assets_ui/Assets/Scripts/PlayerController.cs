@@ -10,13 +10,13 @@ public class PlayerController : MonoBehaviour
     private float Vertical;
 
     // player object assignment
-    private CharacterController player;
+    public CharacterController player;
 
     // speed
     public float speed;
 
     //direction the player is moving
-    private Vector3 movePlayer;
+    public Vector3 movePlayer;
 
     // camera
     public Camera mainCamera;
@@ -71,7 +71,7 @@ public class PlayerController : MonoBehaviour
             transform.position = new Vector3(0, 10, 0);
         }
     }
-
+    
     // function for the camera
     private void camDirection()
     {
