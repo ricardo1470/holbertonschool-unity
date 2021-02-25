@@ -213,18 +213,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!114 &44475924 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3890077492145609373, guid: b12c0347278d9cf4ea2169d90a42f7d7,
-    type: 3}
-  m_PrefabInstance: {fileID: 3890077492015610314}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &138535766 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3890077492145609372, guid: b12c0347278d9cf4ea2169d90a42f7d7,
@@ -975,7 +963,7 @@ MonoBehaviour:
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1139,7 +1127,6 @@ MonoBehaviour:
   Level01: {fileID: 1666151290}
   Level02: {fileID: 1530613938}
   Level03: {fileID: 1968937271}
-  OptionsButton: {fileID: 44475924}
   ExitButton: {fileID: 2093328494}
   sceneState: {fileID: 11400000, guid: e6e68f518d36a6b48967887e055a63dd, type: 2}
 --- !u!1 &1904575572
