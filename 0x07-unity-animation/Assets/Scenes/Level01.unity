@@ -36407,7 +36407,7 @@ PrefabInstance:
     - target: {fileID: 8959254540978155655, guid: abde87e0553d42f4eb996d35832b00df,
         type: 3}
       propertyPath: m_Name
-      value: CutsceneCamera
+      value: CutsceneCamera.controller
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abde87e0553d42f4eb996d35832b00df, type: 3}
