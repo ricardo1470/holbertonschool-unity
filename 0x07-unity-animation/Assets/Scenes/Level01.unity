@@ -12823,6 +12823,7 @@ GameObject:
   - component: {fileID: 766909653}
   - component: {fileID: 766909652}
   - component: {fileID: 766909651}
+  - component: {fileID: 766909655}
   m_Layer: 0
   m_Name: CutsceneCamera
   m_TagString: Untagged
@@ -12914,6 +12915,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 10.606001, y: -75.01601, z: -1.626}
+--- !u!114 &766909655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766909650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89dab2e8397a8741b00c3b494c66c2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 974355192}
+  player: {fileID: 606737543}
+  timer: {fileID: 1059316836}
 --- !u!1001 &770294672
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17310,6 +17326,12 @@ Transform:
   m_Father: {fileID: 1272621952}
   m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1059316836 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5087822095549732257, guid: b4645b0ff8a5dc047840b684edaa9d20,
+    type: 3}
+  m_PrefabInstance: {fileID: 5087822095957761544}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1060806011 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 3b65de07e7e0332469fd446e928febb1,
@@ -35859,6 +35881,11 @@ PrefabInstance:
       objectReference: {fileID: 1262034940}
     - target: {fileID: 1436070493212558626, guid: c74b5b30c3645984abd5867f5b2e9fd0,
         type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436070493212558626, guid: c74b5b30c3645984abd5867f5b2e9fd0,
+        type: 3}
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 974355194}
@@ -36188,7 +36215,7 @@ PrefabInstance:
     - target: {fileID: 5087822095549732257, guid: b4645b0ff8a5dc047840b684edaa9d20,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5087822095549732261, guid: b4645b0ff8a5dc047840b684edaa9d20,
         type: 3}
