@@ -35,10 +35,15 @@ public class PlayerController : MonoBehaviour
 
     // jump
     public float jumpForce;
-
+    
+    // animator
+    public Animator animator;
+    
     public void Start ()
     {
         player = GetComponent<CharacterController> ();
+
+        animator = GetComponent<Animator>();
     }
     
     public void FixedUpdate()
@@ -65,10 +70,23 @@ public class PlayerController : MonoBehaviour
         {
             player.Move(movePlayer * Time.deltaTime);
         }
+        else if (transform.position.y > -2)
+        {
+            animator.SetTrigger("Fall");
+        }
         else
         {
             //gravity = 9.8f;
             transform.position = new Vector3(0, 10, 0);
+        }
+
+        if (Horizontal != 0 || Vertical != 0)
+        {
+            animator.SetBool("Runn", true);
+        }
+        else
+        {
+            animator.SetBool("Runn", false);
         }
     }
     
@@ -97,6 +115,7 @@ public class PlayerController : MonoBehaviour
         if (!Input.GetButtonDown("Jump") || !player.isGrounded) return;
         fallVelocity = jumpForce;
         movePlayer.y = fallVelocity;
+        animator.SetTrigger("Jump");
 
     }
 
