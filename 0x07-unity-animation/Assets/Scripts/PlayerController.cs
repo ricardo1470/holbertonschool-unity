@@ -38,7 +38,9 @@ public class PlayerController : MonoBehaviour
     
     // animator
     public Animator animator;
-    
+    private static readonly int Fall = Animator.StringToHash("Fall");
+    private static readonly int Runn = Animator.StringToHash("Runn");
+
     public void Start ()
     {
         player = GetComponent<CharacterController> ();
@@ -72,7 +74,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (transform.position.y > -2)
         {
-            animator.SetTrigger("Fall");
+            animator.SetTrigger(Fall);
         }
         else
         {
@@ -82,11 +84,11 @@ public class PlayerController : MonoBehaviour
 
         if (Horizontal != 0 || Vertical != 0)
         {
-            animator.SetBool("Runn", true);
+            animator.SetBool(Runn, true);
         }
         else
         {
-            animator.SetBool("Runn", false);
+            animator.SetBool(Runn, false);
         }
     }
     
