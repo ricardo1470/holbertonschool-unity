@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using UnityEditor.AnimatedValues;
+using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
@@ -40,6 +41,7 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
     private static readonly int Fall = Animator.StringToHash("Fall");
     private static readonly int Runn = Animator.StringToHash("Runn");
+    private static readonly int Jump = Animator.StringToHash("Jump");
 
     public void Start ()
     {
@@ -71,15 +73,22 @@ public class PlayerController : MonoBehaviour
         if (transform.position.y > -20)
         {
             player.Move(movePlayer * Time.deltaTime);
+            
         }
-        else if (transform.position.y > -2)
-        {
-            animator.SetTrigger(Fall);
-        }
+        
         else
         {
             //gravity = 9.8f;
-            transform.position = new Vector3(0, 10, 0);
+            transform.position = new Vector3(0, 20, 0);
+        }
+
+        if (transform.position.y >= 20)
+        {
+            animator.SetBool(Fall, true);
+        }
+        else
+        {
+            animator.SetBool(Fall, false);
         }
 
         if (Horizontal != 0 || Vertical != 0)
@@ -117,8 +126,8 @@ public class PlayerController : MonoBehaviour
         if (!Input.GetButtonDown("Jump") || !player.isGrounded) return;
         fallVelocity = jumpForce;
         movePlayer.y = fallVelocity;
-        animator.SetTrigger("Jump");
-
+        animator.SetTrigger(Jump);
+        
     }
 
     // function for gravity
@@ -140,7 +149,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.tag == "DropTrigger")
         {
-            Debug.Log(string.Format("esta en la plataforma"));
+            Debug.Log(string.Format("esta en la platform"));
         }
         
     }
