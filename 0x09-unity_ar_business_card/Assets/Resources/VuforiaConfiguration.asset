@@ -9,12 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -2067402452, guid: bab6fa851cf5a1a4bba3cec5f191cb8e, type: 3}
+  m_Script: {fileID: -2067402452, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
     vuforiaLicenseKey: AWGTrXP/////AAABmQzP2D367EtShSsfDv0VE9IUDJfUZ5xeK6nbviZ24wqrrKweBa3dYtbzrHrq1JAr50lRbL+aGS0oniMkGIfU1KpX3Mun231vCOSu7h6KpbwrVaci/eszlfxEfQuCR4yq5R78TvtlHcl5LAb3kSBe0a2HHrOCLJgfp/eAaCNHylnR7eSIDO2seZOzVvsKIlffID/aOnwYSOyypsm0Y5HpwUS2i0mADbaclGfUDxGbPwBsfw+KEKdLGmmfcBVjNxWjdmkO4HY191XxTzfhNeyJuTUzIqg9KEnkaFH087v8rbK/njY7TY9uaz+LpowD0gwh5MZEPW3D78fTcm56od1G2OPSE/okJi7zg7CQccVH/8uJ
-    ufoLicenseKey: QVMralBtbi8vLy8vQUFBQUtPVFVvc0JJMEVCY3R5eUVvYm5xNlR3Mk83WE80ZTgzV1loM2dNWmpjKzFtd2tpdWpsSnRCQnZybGZ4TmE3aGN3T3BJK1BlV2VGOFYvM0N3TGZ4bUhwMUwxMWZlc2pSTitvU1VjS0E3b01WTWQwb3hjTGYzRnk2alpGc2tsNkpjWm94RjFNNVVpajJKMmd0bjlBb251WDFZeHhUcENSd1J4WDBGanQ4ZnppUTdmWEpmTE1WaUF0UC8zck90bUEvQ2tVS05yd2hpckg3c2JYRUhsQUFhWVM2czZpdWU3ZnY2Szl2WTJHMmdZZWFWTW5zRnNJN3ZtemlhN01JdThjUXkwdUxwNCtPWVdZZCtRaVBNRHRTcXByeUc2RC9aNlp5OEYraTA0VmZvenJTYW9GbS9PTDd6ZFJhMU9vbUFLU0E3OXFubk5zdkdLUUlxd2pzWXpmZCtuazI0bWNPc1JUTW4rcENKMVcvOUtoMXM=
+    ufoLicenseKey: QVhiM0Y1Ly8vLy8vQUFBQUtPbnFIeHJFSGs1N3VrMlg4U050eVBzK2pkOFZxMDhrazlwYjBsYS9aZUIxQlV1ckZWcWt0ZllSQWpnT2tIRlY2VzdOMDRTRjNYRUhmbTF5L1BnYlB4eWdHWEF6RUNheXowc3dyNVNYa2ozdERuRjhka1FpOHRscHdkMDcrcEJEY1FjTjNJcUM1bEgwOTYzQkdZdjRsQStRb0hSQU9nRGthelp5TlY0WHVwWU9EaE05NWw5bXAzbnBDMjM5MWZBWXBFdEdiL2loTDNab3N4b25ZblhjK1JtSS9wLzRoTDIwVGhmTXR6WFJNYkpUTXZLZzJoQ0N0TEJXNEptZ0pSOUtSdStzQWM3QjVNOWFFMGVHQ1dUT1VRSUUweEpiZC9ZL2cvS29iNDhBRXdQOGFwbWR5NmRWU0FHU2psVzRZY2FEU2Zud3J1ZHhucVNmSUZiajNTUnIzM0lKVlFIaW1rL0oyOGNFeDdyekcySXg=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
     maxSimultaneousImageTargets: 1
@@ -24,7 +24,7 @@ MonoBehaviour:
     modelTargetRecoWhileExtendedTracked: 1
     shareRecordingsInITunes: 0
     version: 9.8.5
-    eulaAcceptedVersions: '{"Values":["9.8"]}'
+    eulaAcceptedVersions: '{"Values":["9.8","8.1"]}'
   database:
     disableModelExtraction: 0
   shaders:
