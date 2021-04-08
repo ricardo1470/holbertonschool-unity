@@ -1,9 +1,13 @@
+using System;
 using UnityEngine;
 using Vuforia;
 
-public class AnimationCanva : MonoBehaviour//, ITrackableEventHandler
+
+public class AnimationCanva : MonoBehaviour//, DefaultTrackableEventHandler
 {
-    private TrackableBehaviour animations;
+
+	[SerializeField] private TrackableBehaviour animations;
+	//private TrackableBehaviour animations;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +17,12 @@ public class AnimationCanva : MonoBehaviour//, ITrackableEventHandler
 			//animations.RegisterTrackableEventHandler(this);
         }
     }
+
+	private void OnDestroy()
+	{
+		//if (animations)
+			//animations.UnregisterTrackableEventHandler(this);
+	}
 
 	public void OnTrackableStateChanged(TrackableBehaviour.Status PreviusStatus, TrackableBehaviour.Status newStatus)
 	{
