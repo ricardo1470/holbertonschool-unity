@@ -19,7 +19,7 @@ public class Links : MonoBehaviour
 
     public void linkGitHub()
     {
-        //Application.OpenURL("https://github.com/ricardo1470");
+        Application.OpenURL("https://github.com/ricardo1470");
     }
 
     public void linkLinkedin()

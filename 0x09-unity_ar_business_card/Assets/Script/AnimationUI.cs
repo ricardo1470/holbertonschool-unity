@@ -8,19 +8,23 @@ public class AnimationUI : MonoBehaviour
 {
     public float timeAnimation;
     public AnimationCurve animCurve;
+    private RectTransform Button;
+
+    private TargetQR targetQR;
     public void Start()
     {
-        LeanTween.scale(gameObject, Vector3.zero, 1f).setEase(animCurve);
-        TweenAnimation();
+        targetQR = FindObjectOfType<TargetQR>();
+        Button = gameObject.GetComponent<RectTransform>();
+        targetQR.onTargetOnEnable += TweenAnimation;
     }
 
     public void Update()
     {
-        
     }
 
     public void TweenAnimation()
     {
-        LeanTween.scale(gameObject, Vector3.zero, timeAnimation).setEase(LeanTweenType.easeInBack);
+        Button.localScale = Vector3.zero;
+        LeanTween.scale(gameObject, Vector3.one, timeAnimation).setEase(animCurve);
     }
 }
