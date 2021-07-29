@@ -468,6 +468,7 @@ GameObject:
   - component: {fileID: 440688401}
   - component: {fileID: 440688405}
   - component: {fileID: 440688406}
+  - component: {fileID: 440688407}
   m_Layer: 0
   m_Name: Sphere (1)
   m_TagString: Interactable
@@ -579,6 +580,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0af03eecb340eb240abc88e883024e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &440688407
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440688400}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0.00000023841858, y: 0, z: -0.00000011920929}
 --- !u!1 &449814812
 GameObject:
   m_ObjectHideFlags: 0
