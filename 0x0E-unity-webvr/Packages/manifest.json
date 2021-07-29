@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.de-panther.webxr": "https://github.com/De-Panther/unity-webxr-export.git?path=/Packages/webxr",
     "com.de-panther.webxr-interactions": "https://github.com/De-Panther/unity-webxr-export.git?path=/Packages/webxr-interactions",
     "com.unity.collab-proxy": "1.5.7",
     "com.unity.connect.share": "4.2.2",
